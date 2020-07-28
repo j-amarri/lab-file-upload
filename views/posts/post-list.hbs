@@ -1,0 +1,12 @@
+<h1>Posts</h1>
+{{#each posts}}
+  <a href="/posts/{{ _id }}">
+    <span>Created by {{ creator.username }}</span>
+    <div class="post">
+      <p>{{ content }}</p>
+      <img height=200px src="{{ picPath }}" alt="{{ picName }}">
+      <span>{{ picName }}</span>
+    </div>
+  </a>
+{{/each}}
+
